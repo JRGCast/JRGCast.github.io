@@ -17,7 +17,7 @@
 .About-body-img {
   border: 5px inset rgb(114, 111, 111);
   box-shadow: 5px 5px 5px black;
-  width: 40%;
+  width: 30%;
 }
 
 @media only screen and ( max-width : 769px ) {

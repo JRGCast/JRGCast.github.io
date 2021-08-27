@@ -1,9 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import About from "../pages/About";
-// const About = lazy(() => import("../pages/About"));
-// const Home = lazy(() => import("../pages/Home"));
-// const Projects = lazy(() => import("../pages/Projects"));
+import ContactMe from "../pages/ContactMe";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 
@@ -13,6 +11,7 @@ const Routes = () => {
       <Route exact path='/' component={ Home } />
       <Route path='/about' component={ About } />
       <Route path='/projects' component={ Projects } />
+      <Route path='/contactme' component={ ContactMe } />
     </Switch>
   );
 };
