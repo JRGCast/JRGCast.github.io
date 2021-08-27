@@ -23,7 +23,7 @@ function App() {
         </nav>
       </header>
       <section style={ { paddingTop: '40px' } }>
-        <button onClick={ () => randomJokeFetch() }>Piada: { joke }</button>
+        <button onClick={ () => randomJokeFetch() }>Joke: { joke }</button>
         <Routes />
       </section>
     </div>
