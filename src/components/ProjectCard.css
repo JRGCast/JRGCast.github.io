@@ -1,0 +1,58 @@
+.ProjectCard-image {
+  object-fit: contain;
+  width: 20%;
+}
+
+.ProjectCard-external-anchor-container {
+  display: inline;
+  margin: auto;
+  width: 20%;
+}
+
+.ProjectCard-external-anchor {
+  background-color: #6c89b3;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 30px;
+  padding: 0.4em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.ProjectCard-external-anchor span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.ProjectCard-external-anchor span:after {
+  content: '\00bb';
+  opacity: 0;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  transition: 0.5s;
+}
+
+.ProjectCard-external-anchor:hover span {
+  padding-right: 25px;
+}
+
+.ProjectCard-external-anchor:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and ( max-width : 441px ) {
+
+  .ProjectCard-external-anchor-container a {
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}

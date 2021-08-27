@@ -1,0 +1,28 @@
+.About-body {
+  font-weight: 500;
+  margin: auto;
+  text-align: justify;
+  text-indent: 2em;
+  width: 90%;
+}
+
+.About-body-img-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.About-body-img {
+  border: 5px inset rgb(114, 111, 111);
+  box-shadow: 5px 5px 5px black;
+  width: 40%;
+}
+
+@media only screen and ( max-width : 769px ) {
+
+  .About-body-img {
+    display: none;
+  }
+}

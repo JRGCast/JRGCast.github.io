@@ -1,0 +1,41 @@
+.Projects-projects-container {
+  width: 100%;
+}
+
+.Projects-button-container {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  right: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.Projects-projects-title {
+  margin: 0;
+  padding: 10px;
+  width: 60%;
+}
+
+.Projects-next-button, .Projects-previous-button {
+  background-color: #6c89b3;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: fit-content;
+}
+
+.Projects-next-button:hover, .Projects-previous-button:hover {
+  color: black;
+}
+
+.Projects-next-button:active, .Projects-previous-button:active {
+  background-color: black;
+  color: white;
+}

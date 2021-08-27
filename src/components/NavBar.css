@@ -1,0 +1,44 @@
+.NavBar-display {
+  align-content: center;
+  background-color: #6c89b3;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  height: 30px;
+  justify-content: space-around;
+  left: 1px;
+  list-style-type: none;
+  margin: auto;
+  padding: 0 1px;
+  position: fixed;
+  right: 1px;
+  top: 0;
+}
+
+.NavBar-li {
+  width: fit-content;
+}
+
+.NavBar-link {
+  color: white;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.NavBar-link:hover {
+  color: black;
+}
+
+@media only screen and ( max-width : 490px ) {
+
+  .NavBar-li {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin: 1px;
+    width: fit-content;
+  }
+
+  .NavBar-link {
+    font-size: 0.83em;
+  }
+}
