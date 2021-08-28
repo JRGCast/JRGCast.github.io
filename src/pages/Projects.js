@@ -10,7 +10,7 @@ const Projects = () => {
     console.log(mappingProjectList(frontProjs)[indexFrontProjs].props);
   };
   const prevProj = () => {
-    indexFrontProjs > 0 ? setIndexFrontProjs(indexFrontProjs + 1) : setIndexFrontProjs(frontProjs.length - 1);
+    indexFrontProjs > 0 ? setIndexFrontProjs(indexFrontProjs - 1) : setIndexFrontProjs(frontProjs.length - 1);
     console.log(mappingProjectList(frontProjs)[indexFrontProjs].props);
   };
 
@@ -35,6 +35,7 @@ const Projects = () => {
               <header className="Projects-button-container">
                 <button className="Projects-previous-button" type="button" onClick={ prevProj }>{ '<<' }</button>
                 <h1 className="Projects-projects-title">{ mappingProjectList(frontProjs)[indexFrontProjs].props.title }</h1>
+                { console.log(mappingProjectList(frontProjs)[indexFrontProjs]) }
                 <button className="Projects-next-button" type="button" onClick={ nextProj }>{ '>>' }</button>
               </header>
               <div>
