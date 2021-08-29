@@ -3,22 +3,26 @@ import Loading from "../components/Loading";
 import newProfile from '../images/newProfile.jpeg';
 import './About.css';
 const About = () => {
-  const [loadImg, setLoadImg] = useState(false);
+  const [loadImg, setLoadImg] = useState(null);
+  const [theSpan, setTheSpan] = useState(true);
   useEffect(() => {
     const theImg = new Image();
     theImg.src = newProfile;
-    theImg.onload = () => setLoadImg(true);
-  }, [])
+    theImg.onload = () => setLoadImg(theImg.src);
+  }, []);
   return (
     <div>
-      { loadImg ?
+      { loadImg !== null ?
         <>
           <header className='About-header'>
             <h1 className='About-title'>Quem é João?</h1>
           </header>
           <body className='About-body'>
             <div className='About-body-img-container' >
-              <img className='About-body-img' src={ newProfile } alt='jrgc profile' />
+              {/* { theSpan ?
+                <span style={ { width: "30%", paddingTop: "30%" } }></span> :
+                <span style={ { display: "none" } }></span> } */}
+              <img className='About-body-img' src={ loadImg } onLoad={ () => setTheSpan(false) } alt='jrgc profile' />
             </div>
             <p>Atualmente sou estudante de desenvolvimento web, estou aprendendo muito sobre a área por meio do curso Full Stack da Trybe.
               Estou em transição de carreira, desde 2015 atuei como advogado, majoritariamente na área criminal e consumerista. a
@@ -28,8 +32,9 @@ const About = () => {
             </p>
             <p>A área de tecnologia me abriu um enorme leque de possibilidades, além de, curiosamente, uma comunidade muito mais empática. Cada dia percebo como a a programação é uma ferramenta peculiar! Pretendo usá-la como forma de multiplicar os meus eforços, pois, acredito firmemente que podemos mudar o mundo para melhor, e quero utilizar tudo que está ao meu alcance para atingir esse ideal. </p>
           </body>
-        </> : <Loading /> }
-    </div>
+        </> : <Loading />
+      }
+    </div >
   );
 };
 
