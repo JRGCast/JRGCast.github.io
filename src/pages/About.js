@@ -4,7 +4,6 @@ import newProfile from '../images/newProfile.jpeg';
 import './About.css';
 const About = () => {
   const [loadImg, setLoadImg] = useState(null);
-  const [theSpan, setTheSpan] = useState(true);
   useEffect(() => {
     const theImg = new Image();
     theImg.src = newProfile;
@@ -19,10 +18,7 @@ const About = () => {
           </header>
           <body className='About-body'>
             <div className='About-body-img-container' >
-              {/* { theSpan ?
-                <span style={ { width: "30%", paddingTop: "30%" } }></span> :
-                <span style={ { display: "none" } }></span> } */}
-              <img className='About-body-img' src={ loadImg } onLoad={ () => setTheSpan(false) } alt='jrgc profile' />
+              <img className='About-body-img' src={ loadImg } alt='jrgc profile' />
             </div>
             <p>Atualmente sou estudante de desenvolvimento web, estou aprendendo muito sobre a área por meio do curso Full Stack da Trybe.
               Estou em transição de carreira, desde 2015 atuei como advogado, majoritariamente na área criminal e consumerista. a
