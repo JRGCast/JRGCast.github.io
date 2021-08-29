@@ -6,10 +6,10 @@ const ProjectCard = ({ title, summary, stack, description, image, site, repo }) 
         <h2>{ summary }</h2>
         <p>Feito em { stack }</p>
       </header>
-      <body>
+      <div>
         <img className="ProjectCard-image" src={ image } alt={ image } />
         <p>{ description }</p>
-      </body>
+      </div>
       <footer className="ProjectCard-external-anchor-container">
         <a className="ProjectCard-external-anchor"
           href={ site }
