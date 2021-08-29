@@ -18,7 +18,7 @@ const About = () => {
           </header>
           <body className='About-body'>
             <div className='About-body-img-container' >
-              <img className='About-body-img' src={ loadImg } alt='jrgc profile' />
+              <img className='About-body-img' src={ loadImg } onLoad alt='jrgc profile' />
             </div>
             <p>Atualmente sou estudante de desenvolvimento web, estou aprendendo muito sobre a área por meio do curso Full Stack da Trybe.
               Estou em transição de carreira, desde 2015 atuei como advogado, majoritariamente na área criminal e consumerista. a
