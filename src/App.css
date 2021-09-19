@@ -1,3 +1,17 @@
+:root {
+  --primaryBgColor: #25262a;
+  --secondaryBgColor: #5a4f94;
+  --fontColor: white;
+}
+
+html {
+  background-color: var(--primaryBgColor);
+}
+
+* {
+  color: var(--fontColor);
+}
+
 .App {
   text-align: center;
 }

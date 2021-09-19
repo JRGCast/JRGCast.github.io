@@ -23,7 +23,7 @@
 }
 
 .Projects-next-button, .Projects-previous-button {
-  background-color: #6c89b3;
+  background-color: var(--secondaryBgColor);
   border-radius: 5px;
   color: white;
   cursor: pointer;

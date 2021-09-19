@@ -15,8 +15,9 @@
 }
 
 .About-body-img {
-  border: 5px inset rgb(114, 111, 111);
-  box-shadow: 5px 5px 5px black;
+  border: 5px inset var(--secondaryBgColor);
+  border-radius: 60px;
+  box-shadow: 5px 5px 5px var(--primaryBgColor);
   height: 30vh;
 }
 
