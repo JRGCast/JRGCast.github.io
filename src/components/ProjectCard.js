@@ -1,5 +1,5 @@
 import "./ProjectCard.css";
-const ProjectCard = ({ title, summary, stack, description, image, site, repo }) => {
+const ProjectCard = ({ _title, summary, stack, description, image, site, repo }) => {
   return (
     <section>
       <header>
