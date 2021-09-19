@@ -58,7 +58,6 @@ const Projects = () => {
             <div className="Projects-projects-container">
               <header className="Projects-button-container">
                 <button className="Projects-previous-button" type="button" onClick={ prevBProj }>{ '<<' }</button>
-                {/* <h1 className="Projects-projects-title">{ mappingProjectList(backProjs)[indexBackProjs].props.title }</h1> */ }
                 { console.log(mappingProjectList(backProjs)[indexBackProjs]) }
                 <button className="Projects-next-button" type="button" onClick={ nextBProj }>{ '>>' }</button>
               </header>

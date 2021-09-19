@@ -20,13 +20,12 @@ const About = () => {
             <div className='About-body-img-container' >
               <img className='About-body-img' src={ loadImg } onLoad alt='jrgc profile' />
             </div>
-            <p>Atualmente sou estudante de desenvolvimento web, estou aprendendo muito sobre a área por meio do curso Full Stack da Trybe.
-              Estou em transição de carreira, desde 2015 atuei como advogado, majoritariamente na área criminal e consumerista. a
+            <p> Olá, eu sou o João. Sou advogado em transição de carreira para a área de tecnologia. 
             </p>
             <p>
-              Fiz direito com o ideal da busca pela justiça para quem dela necessite e atuei com destemor desde meu primeiro estágio em escritório até 6 (seis) anos com a "vermelhinha". Infelizmente, com o passar do tempo, descobri que sou "muito pequeno" diante de tanta injustiça e não poderia continuar atuando da mesma forma.
+              Fiz direito com o ideal da busca pela justiça para quem dela necessite e atuei com destemor desde meu primeiro estágio em escritório até 6 (seis) anos com a "vermelhinha". Com o passar dos anos descobri que sou "muito pequeno" diante de tanta injustiça e não poderia continuar atuando da mesma forma.
             </p>
-            <p>A área de tecnologia me abriu um enorme leque de possibilidades, além de, curiosamente, uma comunidade muito mais empática. Cada dia percebo como a a programação é uma ferramenta peculiar! Pretendo usá-la como forma de multiplicar os meus eforços, pois, acredito firmemente que podemos mudar o mundo para melhor, e quero utilizar tudo que está ao meu alcance para atingir esse ideal. </p>
+            <p>A área de tecnologia abriu um enorme leque de possibilidades, e cada dia percebo como a programação é uma ferramenta peculiar! Pretendo usá-la como forma de multiplicar os meus eforços, pois, acredito firmemente que podemos mudar o mundo para melhor, e quero utilizar tudo que está ao meu alcance para atingir esse ideal. </p>
           </body>
         </> : <Loading />
       }
