@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRef } from "react/cjs/react.development";
 import ProjectCard from "../components/ProjectCard";
 import { frontProjs } from "../projects/projectsList";
 import "./Projects.css";
