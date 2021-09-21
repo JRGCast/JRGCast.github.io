@@ -9,12 +9,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        <nav >
+        <nav style={ { position: 'fixed' } } >
           <NavBar />
         </nav>
       </header>
       <section style={ { paddingTop: '40px' } }>
-      <TheDate />
+        <TheDate />
         <Routes />
       </section>
     </div>

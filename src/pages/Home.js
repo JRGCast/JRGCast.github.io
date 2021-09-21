@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Loading from "../components/Loading";
-import News from "../components/News";
 import './Home.css';
 const Home = () => {
   const [loadImg, setLoadImg] = useState(false);
@@ -20,7 +19,7 @@ const Home = () => {
           <img className='Home-body-img' src={ constructionImgSrc } alt="In construction, sorry!" />
         </div>
         <p>{ `Nos ajustes finais. Enquanto isso, se quiser pode passear pelos links da barra de navegação acima =) ` } </p>
-        <News></News>
+        {/* <News></News> */ }
       </body>
     </> : <Loading /> }
   </div>);
