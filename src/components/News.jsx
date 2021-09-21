@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import NewsCard from './NewsCard';
+
+// É necessário BACK-END para utilizar isso fora do localhost, não faz pelo browser
 const News = () => {
   const { REACT_APP_GNEWSURL, REACT_APP_GNEWSAPIKEY } = process.env;
   const [allNews, setAllNews] = useState([]);

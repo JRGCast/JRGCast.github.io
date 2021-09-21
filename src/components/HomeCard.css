@@ -1,0 +1,45 @@
+.HomeCard-section {
+  margin: 10px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.HomeCard-container {
+  align-items: center;
+  background-color: var(--secondaryBgColor);
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  transition: ease-in-out, 0.8s;
+  width: 100%;
+}
+
+.HomeCard-container:hover {
+ border-radius: 0 0 50% 0;
+ background-color: var(--primaryBgColor);
+}
+
+.HomeCard-span {
+  position: relative;
+  visibility: hidden;
+}
+
+.HomeCard-container:hover .HomeCard-span {
+ animation: fadeIn 1s forwards;
+ visibility: visible;
+ rotate: 45deg;
+ }
+
+ @keyframes fadeIn {
+   from {
+     transform: rotate(-20deg);
+     left: 100%;
+   }
+   to {
+     left: 10%;
+   }
+ }
