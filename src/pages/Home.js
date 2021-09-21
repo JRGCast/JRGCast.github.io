@@ -19,7 +19,7 @@ const Home = () => {
         <div className='Home-body-img-container'>
           <img className='Home-body-img' src={ constructionImgSrc } alt="In construction, sorry!" />
         </div>
-        <p>{ `Nos ajustes finais, mas ainda falta bastante '>.<'` } </p>
+        <p>{ `Nos ajustes finais. Enquanto isso, se quiser pode passear pelos links da barra de navegação acima =) ` } </p>
         <News></News>
       </body>
     </> : <Loading /> }
