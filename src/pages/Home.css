@@ -1,7 +1,7 @@
 .Home-body {
   font-weight: 500;
   margin: auto;
-  text-align: justify;
+  text-align: center, justify;
   text-indent: 2em;
   width: 50%;
 }

@@ -14,13 +14,13 @@ const Home = () => {
 
   return (<div>
     { loadImg ? <>
-      <News></News>
       <h1> Opa! DESCULPE PELA BAGUNÇA! </h1>
       <body className='Home-body'>
         <div className='Home-body-img-container'>
           <img className='Home-body-img' src={ constructionImgSrc } alt="In construction, sorry!" />
         </div>
-        <p>Finalizando</p>
+        <p>{ `Nos ajustes finais, mas ainda falta bastante '>.<'` } </p>
+        <News></News>
       </body>
     </> : <Loading /> }
   </div>);
