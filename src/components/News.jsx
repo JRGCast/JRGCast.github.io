@@ -56,12 +56,14 @@ const News = () => {
   };
   return (
     <section>
-      <select
-        id='select'
-        style={ { backgroundColor: 'black' } }
-        onChange={ () => requestNews(document.getElementById('select').value) }>
-        { newsDropDown }
-      </select>
+      <label htmlFor='select'> Pesquise categorias de notícias: { '' }
+        <select
+          id='select'
+          style={ { backgroundColor: 'black' } }
+          onChange={ () => requestNews(document.getElementById('select').value) }>
+          { newsDropDown }
+        </select>
+      </label>
       { loaded ?
         <div>
           { generateCards() }
