@@ -16,8 +16,8 @@ const aboutPage = generateObj(
 
 const contactPage = generateObj(
   'Contate-me',
-  '📞',
-  'Telephone Receiver',
+  '🤝',
+  'Handshake',
   '/contactme');
 
 export const cardContent = [
