@@ -1,10 +1,24 @@
-const generateObj = (title, summary, image = '', imageAlt = '', goTo) => {
-  return ({ title, summary, image, imageAlt, goTo });
+const generateObj = (title, symbol = '', symbolLabel = '', goTo) => {
+  return ({ title, symbol, symbolLabel, goTo });
 };
 
-const myProjsPage = generateObj('Meus Projetos', 'Contendo meus projetosaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'Meus Projetos foto', 'Meus Projetos alt', '/projects');
-const aboutPage = generateObj('Sobre Mim', 'Bio', 'Bio Foto', 'Bio foto Alt', '/about');
-const contactPage = generateObj('Contate-me', 'Contato', 'ContFoto', 'ContAlt', '/contactme');
+const myProjsPage = generateObj(
+  'Meus Projetos',
+  '📑',
+  'Bookmark Tabs',
+  '/projects');
+
+const aboutPage = generateObj(
+  'Sobre Mim',
+  '😁',
+  'Beaming Face with Smiling Eyes',
+  '/about');
+
+const contactPage = generateObj(
+  'Contate-me',
+  '📞',
+  'Telephone Receiver',
+  '/contactme');
 
 export const cardContent = [
   myProjsPage,

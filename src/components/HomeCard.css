@@ -12,10 +12,20 @@
   border: 1px solid white;
   cursor: pointer;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   overflow: visible;
   transition: ease-in-out, 0.8s;
+  text-align: center;
   width: 100%;
+}
+
+.HomeCard-header-n-img {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-left: 20%;
 }
 
 .HomeCard-container:hover {
@@ -37,9 +47,18 @@
  @keyframes fadeIn {
    from {
      transform: rotate(-20deg);
-     left: 100%;
+     left: 90%;
    }
    to {
      left: 10%;
    }
  }
+
+ @media only screen and ( max-width : 441px ) {
+
+  .ProjectCard-external-anchor-container a {
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
