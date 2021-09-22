@@ -1,6 +1,6 @@
 .HomeCard-section {
-  margin: 10px;
   align-self: center;
+  margin: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -10,6 +10,7 @@
   align-items: center;
   background-color: var(--secondaryBgColor);
   border: 1px solid white;
+  border-radius: 20px;
   cursor: pointer;
   display: flex;
   flex-flow: row wrap;
@@ -21,15 +22,13 @@
 }
 
 .HomeCard-header-n-img {
-  align-items: center;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  display: block;
   margin-left: 20%;
+  padding: 10px;
 }
 
 .HomeCard-container:hover {
- border-radius: 0 0 50% 0;
+ border-radius: 20px 20px 50% 20px;
  background-color: var(--primaryBgColor);
 }
 
