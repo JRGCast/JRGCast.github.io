@@ -53,11 +53,18 @@
    }
  }
 
- @media only screen and ( max-width : 441px ) {
+ @media only screen and ( min-width : 700px ) {
+  .HomeCard-section { width: 60%; }
 
-  .ProjectCard-external-anchor-container a {
-    box-sizing: content-box;
-    display: flex;
-    flex-flow: column wrap;
-  }
+  
+}
+
+@media only screen and ( max-width : 550px ) 
+{
+  .HomeCard-container {display: flex; flex-flow: column wrap;}
+  .HomeCard-container:hover {
+    border-radius: 20px;
+    background-color: var(--primaryBgColor);
+   }
+  .HomeCard-header-n-img { margin: auto; }
 }
