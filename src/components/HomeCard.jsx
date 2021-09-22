@@ -8,7 +8,7 @@ const HomeCard = ({ content }) => {
       <div className='HomeCard-container' onClick={ () => history.push(goTo) }>
         <div className='HomeCard-header-n-img'>
           <h2>{ title }</h2>
-          <span role="img" aria-label={ symbolLabel }>{ symbol }</span>
+          <span style={ { fontSize: '3em' } } role="img" aria-label={ symbolLabel }>{ symbol }</span>
         </div>
         <span className='HomeCard-span'>Ir para a página</span>
       </div>
