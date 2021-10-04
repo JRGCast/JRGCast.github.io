@@ -1,18 +1,26 @@
 import { useEffect, useState } from 'react';
 import NewsCard from './NewsCard';
 
-// É necessário BACK-END para utilizar isso fora do localhost, não faz pelo browser
 const News = () => {
-  const { REACT_APP_GNEWSURL, REACT_APP_GNEWSAPIKEY } = process.env;
   const [allNews, setAllNews] = useState([]);
   const [loaded, setLoaded] = useState(false);
   // functions
   const requestNews = async (searchCategory = 'technology') => {
     setLoaded(false);
-    const searchTheme = `https://newsapi.org/v2/top-headlines?country=br&category=${searchCategory}&`;
-    const fetchNews = await fetch(`${searchTheme}${REACT_APP_GNEWSURL}${REACT_APP_GNEWSAPIKEY}`).catch(e => console.log(e));
+    const url = 'https://jrgcast-gitpages-backend.herokuapp.com/';
+    const options = {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ searchCategory })
+    };
+    const fetchNews = await fetch(url, options).catch(e => console.log(e));
     const result = await fetchNews.json();
-    setAllNews(result.articles);
+    setAllNews(result.news.articles);
+    console.log(result);
     setLoaded(true);
   };
   const newsCategories = [
