@@ -37,6 +37,7 @@ const Projects = () => {
               <button className="Projects-next-button" type="button" onClick={ nextFProj }>{ '>>' }</button>
             </header>
             <div>
+              <span>Projeto { indexFrontProjs + 1 }/{ frontProjs.length } </span>
               { mappingProjectList(frontProjs)[indexFrontProjs] }
             </div>
           </div>
