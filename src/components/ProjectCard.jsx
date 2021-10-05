@@ -6,9 +6,11 @@ const ProjectCard = ({ _title, summary, stack, description, image, site, repo })
         <h2>{ summary }</h2>
         <p>Feito em { stack }</p>
       </header>
-      <div>
-        <img className="ProjectCard-image" src={ image } alt={ image } />
+      <div style={ { marginBottom: '10px' } }>
         <p>{ description }</p>
+        <details><summary> Veja uma amostra: </summary>
+          <img className="ProjectCard-image" src={ image } alt={ image } />
+        </details>
       </div>
       <footer className="ProjectCard-external-anchor-container">
         <a className="ProjectCard-external-anchor"
