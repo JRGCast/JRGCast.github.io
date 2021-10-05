@@ -1,6 +1,7 @@
 .News-displayNews {
   align-items: center;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }

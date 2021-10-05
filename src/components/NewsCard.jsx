@@ -1,6 +1,7 @@
+import './NewsCard.css';
 const NewsCard = ({ source, author, title, description, publishedAt, url, urlToImage }) => {
   return (
-    <article style={ { border: '1px solid white', margin: '5px', padding: '5px', width: '80%' } }>
+    <article className='NewsCard-main-wrapper'>
       <h1>{ title }</h1>
       <img src={ urlToImage } alt={ urlToImage } style={ { width: '200px' } } />
       <h3>{ description }</h3>
