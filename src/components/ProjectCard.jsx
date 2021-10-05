@@ -17,13 +17,13 @@ const ProjectCard = ({ _title, summary, stack, description, image, site, repo })
           href={ site }
           target="_blank"
           rel="noreferrer noopener">
-          <span>Veja funcionando</span>
+          <span>Ir ao site</span>
         </a>
         <a className="ProjectCard-external-anchor"
           href={ repo }
           target="_blank"
           rel="noreferrer noopener">
-          <span>Vá até o repositório</span>
+          <span>Ir ao repositório</span>
         </a>
       </footer>
     </section>);

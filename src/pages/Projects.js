@@ -3,12 +3,15 @@ import ProjectCard from "../components/ProjectCard";
 import { frontProjs } from "../projects/projectsList";
 import "./Projects.css";
 const Projects = () => {
+  const closeDetailsTag = () => document.querySelectorAll('details').forEach(tag => tag.removeAttribute("open"));
   const [indexFrontProjs, setIndexFrontProjs] = useState(0);
   const nextFProj = () => {
     indexFrontProjs < frontProjs.length - 1 ? setIndexFrontProjs(indexFrontProjs + 1) : setIndexFrontProjs(0);
+    closeDetailsTag();
   };
   const prevFProj = () => {
     indexFrontProjs > 0 ? setIndexFrontProjs(indexFrontProjs - 1) : setIndexFrontProjs(frontProjs.length - 1);
+    closeDetailsTag();
   };
 
   const mappingProjectList = (projectList) => projectList.map(({ title, summary, stack, description, imgSrc, site, repo }) => {
