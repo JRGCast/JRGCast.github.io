@@ -73,7 +73,7 @@ const News = () => {
           style={ { backgroundColor: 'black' } }
           onChange={ () => requestNews(document.getElementById('select').value) }>
           { newsDropDown }
-        </select>
+        </select> (Provido por NewsApi)
       </label>
       { loaded ?
         <div className='News-displayNews'>
