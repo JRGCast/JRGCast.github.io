@@ -67,18 +67,18 @@ const News = () => {
   };
   return (
     <section style={ { marginTop: '40px' } }>
-      <label htmlFor='select'> Pesquise categorias de notícias: { '' }
+      <label htmlFor='select'> Selecione uma das categorias de notícias: (via newsApi) { '' }
         <select
           id='select'
           style={ { backgroundColor: 'black' } }
           onChange={ () => requestNews(document.getElementById('select').value) }>
           { newsDropDown }
-        </select> (Provido por NewsApi)
+        </select>
       </label>
       { loaded ?
         <div className='News-displayNews'>
           { generateCards() }
-        </div> : 'Carregando notícias...' }
+        </div> : <h4>Carregando notícias...</h4> }
     </section>);
 };
 
