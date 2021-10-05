@@ -20,9 +20,17 @@ const contactPage = generateObj(
   'Handshake',
   '/contactme');
 
+const getNews = generateObj(
+  'Últimas notícias',
+  '📰',
+  'Newspaper',
+  '/latestnews'
+);
+
 export const cardContent = [
   myProjsPage,
   aboutPage,
-  contactPage
+  contactPage,
+  getNews,
 ];
 

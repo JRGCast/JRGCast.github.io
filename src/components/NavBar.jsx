@@ -5,7 +5,8 @@ const NavBar = () => {
     { path: '/', innerText: 'Home' },
     { path: '/about', innerText: 'Sobre mim' },
     { path: '/projects', innerText: 'Meus Projetos' },
-    { path: '/contactme', innerText: 'Contato' }];
+    { path: '/contactme', innerText: 'Contato' },
+    { path: '/latestnews', innerText: 'Últimas notícias' }];
   const navLinkGen = () => pathNText.map(({ path, innerText }) => {
     return (
       <li className='NavBar-li' key={ path }>

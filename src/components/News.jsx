@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './News.css';
 import NewsCard from './NewsCard';
 
 const News = () => {
@@ -65,7 +66,7 @@ const News = () => {
     return 'Limite de requests diário atingido =(';
   };
   return (
-    <section>
+    <section style={ { marginTop: '40px' } }>
       <label htmlFor='select'> Pesquise categorias de notícias: { '' }
         <select
           id='select'
@@ -75,7 +76,7 @@ const News = () => {
         </select>
       </label>
       { loaded ?
-        <div>
+        <div className='News-displayNews'>
           { generateCards() }
         </div> : 'Carregando notícias...' }
     </section>);

@@ -1,10 +1,10 @@
 const NewsCard = ({ source, author, title, description, publishedAt, url, urlToImage }) => {
   return (
-    <article style={ { width: '500px' } }>
+    <article style={ { border: '1px solid white', margin: '5px', padding: '5px', width: '80%' } }>
       <h1>{ title }</h1>
       <img src={ urlToImage } alt={ urlToImage } style={ { width: '200px' } } />
       <h3>{ description }</h3>
-      <p>{ author === null ? 'Autor desconhecido' : author }</p>
+      <p>{ author === null ? 'Autor desconhecido' : `Autor/Autores: ${author}` }</p>
       <span>Publicado em: { publishedAt }</span> <br />
       <a href={ `${url}` }>Link da notícia</a>
     </article >);
