@@ -14,7 +14,7 @@ const Projects = () => {
     closeDetailsTag();
   };
 
-  const mappingProjectList = (projectList) => projectList.map(({ title, summary, stack, description, imgSrc, site, repo }) => {
+  const mappingProjectList = (projectList) => projectList.map(({ title, summary, stack, description, imgSrc, site, repository }) => {
     return <ProjectCard
       title={ title }
       summary={ summary }
@@ -22,7 +22,7 @@ const Projects = () => {
       description={ description }
       image={ imgSrc }
       site={ site }
-      repo={ repo } />;
+      repository={ repository } />;
   });
 
   return (

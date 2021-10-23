@@ -1,5 +1,5 @@
 import "./ProjectCard.css";
-const ProjectCard = ({ _title, summary, stack, description, image, site, repo }) => {
+const ProjectCard = ({ _title, summary, stack, description, image, site, repository }) => {
   return (
     <section>
       <header>
@@ -20,7 +20,7 @@ const ProjectCard = ({ _title, summary, stack, description, image, site, repo })
           <span>Ir ao site</span>
         </a>
         <a className="ProjectCard-external-anchor"
-          href={ repo }
+          href={ repository }
           target="_blank"
           rel="noreferrer noopener">
           <span>Ir ao repositório</span>
