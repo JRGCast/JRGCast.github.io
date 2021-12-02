@@ -21,17 +21,17 @@ const News = () => {
     const fetchNews = await fetch(url, options).catch(e => console.log(e));
     const result = await fetchNews.json();
     setAllNews(result.news.articles);
-    console.log(result);
     setLoaded(true);
   };
   const newsCategories = [
+    { value: 'technology', show: 'Tecnologia' },
     { value: 'business', show: 'Negócios' },
     { value: 'entertainment', show: 'Entretenimento' },
     { value: 'general', show: 'Geral' },
     { value: 'health', show: 'Saúde' },
     { value: 'science', show: 'Ciência' },
     { value: 'sports', show: 'Esportes' },
-    { value: 'technology', show: 'Tecnologia' }];
+  ];
   const newsDropDown = newsCategories.map(({ value, show }, key) =>
   (
     <option

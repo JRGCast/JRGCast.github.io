@@ -1,9 +1,10 @@
 import "./ProjectCard.css";
-const ProjectCard = ({ _title, summary, stack, description, image, site, repository }) => {
+const ProjectCard = ({ title, level, summary, stack, description, image, site, repository }) => {
   return (
     <section>
       <header>
         <h2>{ summary }</h2>
+        <h3> Nível { level }</h3>
         <p>Feito em { stack }</p>
       </header>
       <div style={ { marginBottom: '10px' } }>

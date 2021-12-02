@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { frontProjs } from "../Trybeprojects/TrybeprojectsList";
+import { frontProjs } from "../projects/projectsList";
 import "./TrybeProjects.css";
 const TrybeProjects = () => {
   const closeDetailsTag = () => document.querySelectorAll('details').forEach(tag => tag.removeAttribute("open"));
@@ -14,9 +14,10 @@ const TrybeProjects = () => {
     closeDetailsTag();
   };
 
-  const mappingProjectList = (projectList) => projectList.map(({ title, summary, stack, description, imgSrc, site, repository }) => {
+  const mappingProjectList = (projectList) => projectList.map(({ title, level, summary, stack, description, imgSrc, site, repository }) => {
     return <ProjectCard
       title={ title }
+      level={ level }
       summary={ summary }
       stack={ stack }
       description={ description }
@@ -27,7 +28,8 @@ const TrybeProjects = () => {
 
   return (
     <section>
-      <h1> Meus projetos</h1>
+      { console.log(mappingProjectList(frontProjs)) }
+      <h1> Meus projetos Trybe</h1>
       <main>
         <section style={ { marginBottom: "20px" } }>
           <div className="TrybeProjects-Trybeprojects-container">

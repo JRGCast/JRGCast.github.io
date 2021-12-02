@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
 
   return (
-    <main>
+    <main >
       { cardContent.map((elemen, index) => <HomeCard key={ index } content={ elemen } />) }
     </main>
   );
