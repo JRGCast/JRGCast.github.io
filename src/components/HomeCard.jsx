@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router';
-import './HomeCard.css';
+import '../scss/HomeCard.scss';
 const HomeCard = ({ content }) => {
   const history = useHistory();
   const { title, symbol, symbolLabel, goTo } = content;

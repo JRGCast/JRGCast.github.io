@@ -1,4 +1,4 @@
-import "./ProjectCard.css";
+import "../scss/ProjectCard.scss"; 
 const ProjectCard = ({ title, level, summary, stack, description, image, site, repository }) => {
   return (
     <section>

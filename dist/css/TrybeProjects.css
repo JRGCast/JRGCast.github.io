@@ -1,0 +1,51 @@
+.TrybeProjects-Trybeprojects-container {
+  width: 100%;
+}
+
+.TrybeProjects-button-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  right: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.TrybeProjects-Trybeprojects-title {
+  margin: 0;
+  padding: 10px;
+  width: 60%;
+}
+
+.TrybeProjects-next-button, .TrybeProjects-previous-button {
+  background-color: var(--secondaryBgColor);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.TrybeProjects-next-button:hover, .TrybeProjects-previous-button:hover {
+  color: black;
+}
+
+.TrybeProjects-next-button:active, .TrybeProjects-previous-button:active {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=TrybeProjects.css.map */

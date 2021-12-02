@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './scss/App.scss';
 import NavBar from './components/NavBar';
 import TheDate from './components/TheDate';
 import Routes from './Routes/routes';

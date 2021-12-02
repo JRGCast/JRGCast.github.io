@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { frontProjs } from "../projects/projectsList";
-import "./TrybeProjects.css";
+import "../scss/TrybeProjects.scss";
 const TrybeProjects = () => {
   const closeDetailsTag = () => document.querySelectorAll('details').forEach(tag => tag.removeAttribute("open"));
   const [indexFrontProjs, setIndexFrontProjs] = useState(0);

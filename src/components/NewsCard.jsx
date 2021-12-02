@@ -1,4 +1,4 @@
-import './NewsCard.css';
+import '../scss/NewsCard.scss';
 const NewsCard = ({ source, author, title, description, publishedAt, url, urlToImage }) => {
   const date = new Date(publishedAt);
   const formatOptions = {

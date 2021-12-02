@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Loading from "../components/Loading";
 import newProfile from '../images/newProfile.jpeg';
-import './About.css';
+import '../scss/About.scss';
 const About = () => {
   const [loadImg, setLoadImg] = useState(null);
   useEffect(() => {

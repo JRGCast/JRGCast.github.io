@@ -1,0 +1,38 @@
+.Home-body {
+  font-weight: 500;
+  margin: auto;
+  text-align: center, justify;
+  text-indent: 2em;
+  width: 50%;
+}
+
+.Home-body-img-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.Home-body-img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 769px) {
+  .Home-body {
+    width: 90%;
+  }
+  .Home-body-img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

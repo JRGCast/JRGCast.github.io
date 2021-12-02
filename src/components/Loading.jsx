@@ -1,4 +1,4 @@
-import './Loading.css';
+import '../scss/Loading.scss';
 const Loading = () => {
   return (
     <div className='Loading-bar-container'>Carregando... Aguarde um instante...

@@ -1,6 +1,6 @@
 import HomeCard from '../components/HomeCard';
 import { cardContent } from '../projects/homeCardContent';
-import './Home.css';
+import '../scss/Home.scss';
 const Home = () => {
 
   return (
