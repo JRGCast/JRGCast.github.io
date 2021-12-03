@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACnB,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,UAAU;EAClB,OAAO,EAAE,GAAG;EACZ,KAAK,EAAE,GAAG;CACb",
     "sources": [
-        "../../src/components/NewsCard.scss"
+        "../../src/scss/NewsCard.scss"
     ],
     "names": [],
     "file": "NewsCard.css"
